@@ -1,0 +1,49 @@
+.SortingTabs {
+  height: 50px;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.SortingTab {
+  display: flex;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 20px;
+  background: var(--sorting-tab-background);
+  border: 1px solid var(--sorting-tab-border);
+  flex: 1 0 auto;
+  align-items: center;
+  justify-content: center;
+
+  &_active {
+    background: var(--sorting-tab-background-active);
+    color: var(--sorting-tab-text-active);
+    border: 1px solid var(--sorting-tab-background-active);
+    margin-right: 1px;
+  }
+
+  &:first-child {
+    border-radius: 5px 0 0 5px;
+    &:hover {
+      z-index: 2;
+    }
+  }
+
+  &:last-child {
+    border-radius: 0 5px 5px 0;
+  }
+
+  &:not(:first-child) {
+    margin-left: -1px;
+  }
+
+  &:hover:not(.SortingTab_active) {
+    border: 1px solid var(--sorting-tab-border-hover);
+    background: var(--sorting-tab-background-hover);
+    transition: all 0.3s;
+    color: var(--sorting-tab-text-hover);
+  }
+}

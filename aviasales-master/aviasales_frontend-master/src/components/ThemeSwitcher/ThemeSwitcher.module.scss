@@ -1,0 +1,49 @@
+.Switcher {
+  position: absolute;
+  right: 10px;
+}
+
+.SwitcherInput {
+  display: none;
+}
+
+.SwitcherLabel {
+  display: inline-block;
+  position: relative;
+  background-color: #83d8ff;
+  height: 30px;
+  width: 50px;
+  border-radius: 18px;
+  cursor: pointer;
+  transition: background-image 0.2s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  background-image: url("https://www.aviasales.ru/helios-assets/day-f57cce95d54a4169fca3f8536fc8bb16.svg");
+}
+
+.SwitcherToggle {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  top: 4px;
+  left: 4px;
+  border-radius: 50px;
+  transform: rotate(-45deg);
+  transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  background-color: #ff8742;
+  background-image: url("https://www.aviasales.ru/helios-assets/sun-85fc2c3910b661d20b962851179ad09f.svg");
+  width: 22px;
+  height: 22px;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25),
+    inset 0 0 10px 0 hsla(0, 0%, 100%, 0.5);
+}
+
+.SwitcherInput:checked + .SwitcherLabel {
+  background-image: url("https://www.aviasales.ru/helios-assets/night-81c7c4b13c053594c9ac00efe3aea7bf.svg");
+}
+
+.SwitcherInput:checked + .SwitcherLabel .SwitcherToggle {
+  background-color: #eff9ff;
+  background-image: url("https://www.aviasales.ru/helios-assets/moon-8540e558b4839650675fbb94bc126f33.svg");
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25),
+    inset 0 -3px 6px 0 rgba(0, 0, 0, 0.15);
+  transform: translate3d(20px, 0, 0) rotate(0);
+}

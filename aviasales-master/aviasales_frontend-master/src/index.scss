@@ -1,0 +1,113 @@
+:root {
+  --background-app: #f3f7fa;
+  --body-text: #4A4A4A;
+  --box-shadow: rgba(0, 0, 0, 0.1);
+
+  --filter-background: #fff;
+  --filter-hover-item: #F1FCFF;
+  --filter-text: #4A4A4A;
+
+  --checkbox-box: rgba(154, 187, 206, 1);
+  --checkbox-box-check: #2196F3;
+
+  --sorting-tab-background: #fff;
+  --sorting-tab-background-active: #2196F3;
+  --sorting-tab-background-hover: #F1FCFF;
+  --sorting-tab-text: #4A4A4A;
+  --sorting-tab-text-active: #fff;
+  --sorting-tab-text-hover: #2196F3;
+  --sorting-tab-border: #DFE5EC;
+  --sorting-tab-border-hover: #2196F3;
+
+  --ticket-background: #fff;
+  --ticket-price: #2196F3;
+  --ticket-text-subtitle: #A0B0B9;
+  --ticket-text: #4A4A4A;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+  background-color: transparent;
+  border-width: 0;
+  padding: 0;
+  cursor: pointer;
+  outline: none;
+}
+figure {
+  margin: 0;
+}
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+ul,
+ol,
+dd {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+p {
+  margin: 0;
+}
+cite {
+  font-style: normal;
+}
+
+.app {
+  background: var(--background-app);
+  padding: 20px 10px;
+
+  &__inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  &__section {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  @media screen and (min-width: 630px) {
+    padding: 55px 20px;
+  }
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Open Sans", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--body-text);
+  transition: all .3s ease;
+}
+
+section {
+  min-height: 100vh;
+}

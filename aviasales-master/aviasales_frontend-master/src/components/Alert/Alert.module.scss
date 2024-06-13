@@ -1,0 +1,18 @@
+.Alert {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  span {
+    text-align: center;
+  }
+
+  button {
+    margin-top: 10px;
+    color: var(--body-text);
+    font-size: 15px;
+    line-height: 20px;
+    border-bottom: 1px solid;
+  }
+}

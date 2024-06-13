@@ -1,0 +1,1 @@
+export const getTicketsUrl = 'https://front-test.beta.aviasales.ru/tickets';

@@ -1,0 +1,66 @@
+.ticket {
+  max-width: 502px;
+  min-width: 300px;
+  background: var(--ticket-background);
+  box-shadow: 0px 2px 8px var(--box-shadow);
+  border-radius: 5px;
+  padding: 20px;
+}
+.ticketHeader {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+
+  div {
+    flex: 2;
+    &:last-child {
+      flex: 1;
+    }
+  }
+}
+
+.ticketPrice {
+  font-size: 24px;
+  color: var(--ticket-price);
+  font-weight: 600;
+  align-self: center;
+}
+
+// body
+
+.ticketBody {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.bodyRow {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+
+  div {
+    flex: 1;
+  }
+
+  &:last-child {
+    margin-bottom: 0px;
+  }
+}
+
+.titleRow {
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: var(--ticket-text-subtitle);
+  display: block;
+  line-height: 18px;
+}
+
+.textRow {
+  display: block;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+}
